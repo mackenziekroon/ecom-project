@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+// import puppy from 'client/components/puppy.png'
 
 /**
  * COMPONENT
@@ -12,6 +13,7 @@ export const UserHome = props => {
     <div>
       <h1>Home page</h1>
       {/* <h3>Welcome, {email}</h3> */}
+      {/* <img src={puppy} /> */}
     </div>
   )
 }

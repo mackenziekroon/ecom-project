@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {auth} from '../store'
+import {Link} from 'react-router-dom'
 
 /**
  * COMPONENT
@@ -11,6 +12,7 @@ const AuthForm = props => {
 
   return (
     <div>
+      {props.match.path === '/login' ? <h1>LOGIN</h1> : <h1>REGISTER</h1>}
       <form onSubmit={handleSubmit} name={name}>
         <div>
           <label htmlFor="email">
@@ -30,6 +32,9 @@ const AuthForm = props => {
         {error && error.response && <div> {error.response.data} </div>}
       </form>
       <a href="/auth/google">{displayName} with Google</a>
+      <p>
+        Don't have an account? <Link to="/signup">Create one</Link>
+      </p>
     </div>
   )
 }
