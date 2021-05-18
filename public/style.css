@@ -1,9 +1,16 @@
 body {
   font-family: sans-serif;
+  background-color: #e9e9ed;
 }
 
 a {
   text-decoration: none;
+  color: black;
+  padding: 5%;
+}
+
+a:visited {
+  color: black;
 }
 
 label {
@@ -20,6 +27,18 @@ form div {
   display: inline-block;
 }
 
-.account {
-  background-color: rosybrown;
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  width: 10%;
+}
+
+.nav-links {
+  width: 100%;
+}
+
+.nav-links:hover {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  border-radius: 20% 10% 60% 20%;
 }
