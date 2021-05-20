@@ -25,27 +25,86 @@ async function seed() {
       lastName: 'Kroon',
       email: 'mkroon@email.com',
       password: '123'
+    }),
+    User.create({
+      firstName: 'Greta',
+      lastName: 'Dog',
+      email: 'gretawoofwoof@email.com',
+      password: '123'
     })
   ])
 
   const inventory = await Promise.all([
-    Inventory.create({
-      brandName: 'Holiday the Label',
-      itemName: 'Check Swimsuit',
-      size: 'S',
-      colorName: 'Olive',
-      quantity: 2,
-      price: 103,
-      image:
-        'https://cdn.shopify.com/s/files/1/3044/4744/products/IMG_5136_2560x.jpg?v=1619640745',
+    Inventory.create(
+      {
+        brandName: 'Holiday the Label',
+        itemName: 'Check Swimsuit',
+        size: 'S',
+        colorName: 'Olive',
+        quantity: 2,
+        price: 103,
+        image:
+          'https://cdn.shopify.com/s/files/1/3044/4744/products/IMG_5136_2560x.jpg?v=1619640745',
 
-      description:
-        'Small olive check print high-cut swimsuit with a square neckline and spaghetti straps. 100% Lycra with 100% polyester lining, Designed in Australia, made in Indonesia',
+        description:
+          'Small olive check print high-cut swimsuit with a square neckline and spaghetti straps. 100% Lycra with 100% polyester lining, Designed in Australia, made in Indonesia',
 
-      careInstructions: 'Hand wash',
-      category: 'Swim',
-      colorCategory: 'Green'
-    })
+        careInstructions: 'Hand wash',
+        category: 'Swim',
+        colorCategory: 'Green'
+      },
+      Inventory.create({
+        brandName: 'Holiday the Label',
+        itemName: 'Check Swimsuit',
+        size: 'M',
+        colorName: 'Olive',
+        quantity: 2,
+        price: 103,
+        image:
+          'https://cdn.shopify.com/s/files/1/3044/4744/products/IMG_5136_2560x.jpg?v=1619640745',
+
+        description:
+          'Small olive check print high-cut swimsuit with a square neckline and spaghetti straps. 100% Lycra with 100% polyester lining, Designed in Australia, made in Indonesia',
+
+        careInstructions: 'Hand wash',
+        category: 'Swim',
+        colorCategory: 'Green'
+      }),
+      Inventory.create({
+        brandName: 'Holiday the Label',
+        itemName: 'Check Swimsuit',
+        size: 'S',
+        colorName: 'Olive',
+        quantity: 2,
+        price: 103,
+        image:
+          'https://cdn.shopify.com/s/files/1/3044/4744/products/IMG_5136_2560x.jpg?v=1619640745',
+
+        description:
+          'Small olive check print high-cut swimsuit with a square neckline and spaghetti straps. 100% Lycra with 100% polyester lining, Designed in Australia, made in Indonesia',
+
+        careInstructions: 'Hand wash',
+        category: 'Swim',
+        colorCategory: 'Green'
+      }),
+      Inventory.create({
+        brandName: 'Holiday the Label',
+        itemName: 'Check Swimsuit',
+        size: 'S',
+        colorName: 'Camel',
+        quantity: 2,
+        price: 103,
+        image:
+          'https://cdn.shopify.com/s/files/1/3044/4744/products/IMG_5154_2560x.jpg?v=1619640783',
+
+        description:
+          'Small olive check print high-cut swimsuit with a square neckline and spaghetti straps. 100% Lycra with 100% polyester lining, Designed in Australia, made in Indonesia',
+
+        careInstructions: 'Hand wash',
+        category: 'Swim',
+        colorCategory: 'Tan'
+      })
+    )
   ])
 
   const orders = await Promise.all([
