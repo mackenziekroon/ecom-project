@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
+// import honeydew from './images/honeydew.png'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    {/* <h1>BOILERMAKER</h1> */}
     <nav>
       {isLoggedIn ? (
         <div>
@@ -20,20 +20,21 @@ const Navbar = ({handleClick, isLoggedIn}) => (
       ) : (
         <div className="navbar-container">
           {/* The navbar will show these links before you log in */}
-          <div>
-            <Link to="/home">Name of shop</Link>
-            <Link className="nav-links" to="/home">
-              Shop All
-            </Link>
-            <Link className="nav-links" to="/home">
-              Bestsellers
-            </Link>
-            <Link className="nav-links" to="/home">
-              New Arrivals
-            </Link>
-            <Link to="/login">Log In</Link>
-            {/* <Link to="/signup">Sign Up</Link> */}
-          </div>
+
+          <Link className="logo" to="/home">
+            <img alt="" src="./honeydew.png" />
+          </Link>
+          <Link className="nav-links" to="/home">
+            Shop All
+          </Link>
+          <Link className="nav-links" to="/home">
+            Swim
+          </Link>
+          <Link className="nav-links" to="/home">
+            Shoes
+          </Link>
+          <Link to="/login">Log In</Link>
+          {/* <Link to="/signup">Sign Up</Link> */}
         </div>
       )}
     </nav>

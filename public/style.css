@@ -6,39 +6,34 @@ body {
 a {
   text-decoration: none;
   color: black;
-  padding: 5%;
+  padding: 1%;
 }
 
 a:visited {
   color: black;
 }
 
-label {
-  display: block;
-}
-
-nav a {
-  display: inline-block;
-  margin: 1em;
-}
-
-form div {
-  margin: 1em;
-  display: inline-block;
-}
-
 .navbar-container {
   display: flex;
-  flex-direction: column;
-  font-size: larger;
-  width: 10%;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  width: 100vw;
+  height: 70px;
+}
+
+.logo {
+  width: 250px;
+  height: 150px;
+  /* background-color: #bd85a7; */
+  padding-top: 40px;
 }
 
 .nav-links {
-  width: 100%;
+  border: grey 2px solid;
 }
 
 .nav-links:hover {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  border-radius: 20% 10% 60% 20%;
+  /* border-radius: 20% 10% 10% 20%; */
 }
