@@ -6,8 +6,8 @@ import {logout} from '../store'
 // import honeydew from './images/honeydew.png'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
-    <nav>
+  <div className="screen-template">
+    <nav className="home-screen">
       {isLoggedIn ? (
         <div>
           {/* The navbar will show these links after you log in */}
@@ -21,20 +21,23 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         <div className="navbar-container">
           {/* The navbar will show these links before you log in */}
 
-          <Link className="logo" to="/home">
+          {/* <Link className="logo" to="/">
             <img alt="" src="./honeydew.png" />
-          </Link>
-          <Link className="nav-links" to="/home">
-            Shop All
-          </Link>
-          <Link className="nav-links" to="/home">
-            Swim
-          </Link>
-          <Link className="nav-links" to="/home">
-            Shoes
-          </Link>
-          <Link to="/login">Log In</Link>
-          {/* <Link to="/signup">Sign Up</Link> */}
+          </Link> */}
+          <div>Logo goes here!</div>
+          <div className="nav">
+            <Link className="nav-links" to="/home">
+              Shop All
+            </Link>
+            <Link className="nav-links" to="/home">
+              Swim
+            </Link>
+            <Link className="nav-links" to="/home">
+              Shoes
+            </Link>
+            <Link to="/login">Log In</Link>
+            {/* <Link to="/signup">Sign Up</Link> */}
+          </div>
         </div>
       )}
     </nav>

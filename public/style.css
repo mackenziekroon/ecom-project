@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: #e9e9ed;
+  margin: 0;
 }
 
 a {
@@ -13,7 +14,20 @@ a:visited {
   color: black;
 }
 
+.screen-template {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar-container {
+  background-color: peachpuff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,10 +44,14 @@ a:visited {
 }
 
 .nav-links {
-  border: grey 2px solid;
+  /* border:  2px solid; */
+  font-family: bukhari;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: 5%;
+  width: 5%;
 }
 
-.nav-links:hover {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  /* border-radius: 20% 10% 10% 20%; */
+.nav {
+  flex-grow: 4;
 }
