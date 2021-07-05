@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #e9e9ed;
   margin: 0;
 }
@@ -45,7 +45,6 @@ a:visited {
 
 .nav-links {
   /* border:  2px solid; */
-  font-family: bukhari;
   padding-left: 4%;
   padding-right: 4%;
   margin: 5%;
